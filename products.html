@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Products | Tales by Hand</title>
+
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="css/style.css">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&family=Inter:wght@400;600&display=swap" rel="stylesheet">
+</head>
+
+<body class="bg-[#f1e8df] text-[#3b2f2f] font-['Inter'] overflow-x-hidden">
+  <!-- 🌾 Navbar -->
+  <nav class="w-full bg-[#d9c7b2]/80 backdrop-blur-md fixed top-0 z-50 shadow-sm transition-all duration-500">
+    <div class="max-w-6xl mx-auto flex justify-between items-center px-6 py-4">
+      <h1 class="text-2xl font-['Playfair_Display'] font-semibold tracking-wide">TALES BY HAND</h1>
+      <ul class="hidden md:flex gap-8 text-lg">
+        <li><a href="index.html" class="hover:text-[#8b5e3c] transition-colors duration-300">Home</a></li>
+        <li><a href="products.html" class="hover:text-[#8b5e3c] transition-colors duration-300">Products</a></li>
+        <li><a href="about.html" class="hover:text-[#8b5e3c] transition-colors duration-300">About</a></li>
+        <li><a href="cart.html" class="hover:text-[#8b5e3c] transition-colors duration-300">Cart</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- 🧺 Products Section -->
+  <section class="pt-28 pb-16 px-6 max-w-7xl mx-auto">
+    <h2 class="text-4xl font-['Playfair_Display'] text-center mb-10 fade-up">Explore Handicrafts by State</h2>
+
+    <!-- Filter Buttons -->
+    <div class="flex justify-center flex-wrap gap-4 mb-10">
+      <button class="filter-btn bg-[#8b5e3c] text-white px-5 py-2 rounded-full hover:bg-[#a07155] transition-all duration-300" data-state="all">All</button>
+      <button class="filter-btn bg-[#d9c7b2] text-[#4b3832] px-5 py-2 rounded-full hover:bg-[#8b5e3c] hover:text-white transition-all duration-300" data-state="Rajasthan">Rajasthan</button>
+      <button class="filter-btn bg-[#d9c7b2] text-[#4b3832] px-5 py-2 rounded-full hover:bg-[#8b5e3c] hover:text-white transition-all duration-300" data-state="Kerala">Kerala</button>
+      <button class="filter-btn bg-[#d9c7b2] text-[#4b3832] px-5 py-2 rounded-full hover:bg-[#8b5e3c] hover:text-white transition-all duration-300" data-state="Odisha">Odisha</button>
+    </div>
+
+    <!-- Products Grid -->
+    <div id="productGrid" class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
+
+      <!-- Rajasthan Products -->
+      <div class="product-card" data-state="Rajasthan">
+        <img src="https://images.unsplash.com/photo-1608501078713-2d94b55a5c2e?auto=format&fit=crop&w=800&q=80" class="rounded-2xl shadow-lg w-full h-56 object-cover" alt="Pottery">
+        <h4 class="text-lg font-semibold mt-3 text-center">Handmade Pottery</h4>
+        <p class="text-center text-sm text-[#6b4f4f]">Rajasthan</p>
+      </div>
+
+      <div class="product-card" data-state="Rajasthan">
+        <img src="https://images.unsplash.com/photo-1609019586519-47239b77c7d2?auto=format&fit=crop&w=800&q=80" class="rounded-2xl shadow-lg w-full h-56 object-cover" alt="Textiles">
+        <h4 class="text-lg font-semibold mt-3 text-center">Block Printed Textiles</h4>
+        <p class="text-center text-sm text-[#6b4f4f]">Rajasthan</p>
+      </div>
+
+      <!-- Kerala Products -->
+      <div class="product-card" data-state="Kerala">
+        <img src="https://images.unsplash.com/photo-1610173824793-5ab09cc72823?auto=format&fit=crop&w=800&q=80" class="rounded-2xl shadow-lg w-full h-56 object-cover" alt="Bamboo Lamp">
+        <h4 class="text-lg font-semibold mt-3 text-center">Bamboo Lamp</h4>
+        <p class="text-center text-sm text-[#6b4f4f]">Kerala</p>
+      </div>
+
+      <div class="product-card" data-state="Kerala">
+        <img src="https://images.unsplash.com/photo-1603354350317-6d7c1b69db33?auto=format&fit=crop&w=800&q=80" class="rounded-2xl shadow-lg w-full h-56 object-cover" alt="Coir Handbag">
+        <h4 class="text-lg font-semibold mt-3 text-center">Coir Handbag</h4>
+        <p class="text-center text-sm text-[#6b4f4f]">Kerala</p>
+      </div>
+
+      <!-- Odisha Products -->
+      <div class="product-card" data-state="Odisha">
+        <img src="https://images.unsplash.com/photo-1615529328338-6a3b3d44b90c?auto=format&fit=crop&w=800&q=80" class="rounded-2xl shadow-lg w-full h-56 object-cover" alt="Pattachitra Art">
+        <h4 class="text-lg font-semibold mt-3 text-center">Pattachitra Painting</h4>
+        <p class="text-center text-sm text-[#6b4f4f]">Odisha</p>
+      </div>
+
+      <div class="product-card" data-state="Odisha">
+        <img src="https://images.unsplash.com/photo-1628191010650-9d37f9c06e3d?auto=format&fit=crop&w=800&q=80" class="rounded-2xl shadow-lg w-full h-56 object-cover" alt="Stone Carving">
+        <h4 class="text-lg font-semibold mt-3 text-center">Stone Carving</h4>
+        <p class="text-center text-sm text-[#6b4f4f]">Odisha</p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- 🌸 Footer -->
+  <footer class="bg-[#d9c7b2] py-10 text-center text-[#4b3832]">
+    <p class="font-['Playfair_Display'] text-lg">© 2025 TALES BY HAND | Celebrating Indian Heritage</p>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
