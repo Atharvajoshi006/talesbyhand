@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cart | TALES BY HAND</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="bg-[#f7f4ef] text-[#4b3832] font-['Inter']">
+  <nav class="w-full bg-[#d9c7b2]/80 backdrop-blur-md fixed top-0 z-50 shadow-sm">
+    <div class="max-w-6xl mx-auto flex justify-between items-center px-6 py-4">
+      <h1 class="text-2xl font-['Playfair_Display'] font-semibold">TALES BY HAND</h1>
+      <ul class="hidden md:flex gap-8 text-lg">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="products.html">Products</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="cart.html" class="text-[#8b5e3c] font-semibold">Cart</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <section class="pt-32 pb-16 max-w-4xl mx-auto px-6">
+    <h2 class="text-4xl font-['Playfair_Display'] mb-10 text-center fade-up">Your Cart</h2>
+    <div id="cart-items" class="space-y-6">
+      <div class="bg-[#efe9e4] p-6 rounded-2xl shadow fade-up">
+        <h4 class="font-semibold text-lg">Bamboo Lamp</h4>
+        <p class="text-sm mb-2">Assam</p>
+        <div class="flex justify-between items-center">
+          <span class="font-semibold">₹1200</span>
+          <button class="add-cart-btn remove-btn">Remove</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="text-center mt-10 fade-up">
+      <button class="bg-[#8b5e3c] text-white px-6 py-3 rounded-xl hover:bg-[#a07155] transition-all">Checkout</button>
+    </div>
+  </section>
+
+  <footer class="bg-[#d9c7b2] py-10 text-center">
+    <p>© 2025 TALES BY HAND | Celebrating Indian Heritage</p>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

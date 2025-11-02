@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TALES BY HAND</title>
+
+  <!-- Tailwind CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="css/style.css">
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&family=Inter:wght@400;600&display=swap" rel="stylesheet">
+
+</head>
+<body class="bg-[#f7f4ef] text-[#4b3832] font-['Inter'] overflow-x-hidden">
+
+  <!-- Navbar -->
+  <nav class="w-full bg-[#d9c7b2]/80 backdrop-blur-md fixed top-0 z-50 shadow-sm transition-all duration-500">
+    <div class="max-w-6xl mx-auto flex justify-between items-center px-6 py-4">
+      <h1 class="text-2xl font-['Playfair_Display'] font-semibold tracking-wide">TALES BY HAND</h1>
+      <ul class="hidden md:flex gap-8 text-lg">
+        <li><a href="index.html" class="hover:text-[#8b5e3c] transition-colors duration-300">Home</a></li>
+        <li><a href="products.html" class="hover:text-[#8b5e3c] transition-colors duration-300">Products</a></li>
+        <li><a href="about.html" class="hover:text-[#8b5e3c] transition-colors duration-300">About</a></li>
+        <li><a href="cart.html" class="hover:text-[#8b5e3c] transition-colors duration-300">Cart</a></li>
+        <li><a href="login.html" class="hover:text-[#8b5e3c] transition-colors duration-300">Login</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- 🪶 Hero Section -->
+  <section class="h-screen flex flex-col justify-center items-center text-center bg-[url('https://images.unsplash.com/photo-1616433344862-6e0e8e2a8f9f?auto=format&fit=crop&w=1500&q=80')] bg-cover bg-center text-[#f7f4ef] relative">
+    <div class="absolute inset-0 bg-[#4b3832]/70"></div>
+    <div class="relative z-10 max-w-3xl">
+      <h2 class="text-5xl md:text-6xl font-['Playfair_Display'] mb-4 fade-in">Found.Crafted.Loved</h2>
+      <p class="text-lg md:text-xl mb-8 fade-in delay-200">Handmade treasures from every corner of the country — crafted with love by local artisans.</p>
+      <a href="products.html" class="bg-[#8b5e3c] hover:bg-[#a07155] text-white px-6 py-3 rounded-xl transition-all duration-500 fade-in delay-400">Explore Collection</a>
+    </div>
+  </section>
+
+  <!-- 🧺 Categories Section -->
+  <section class="py-16 max-w-6xl mx-auto px-6">
+    <h3 class="text-3xl font-['Playfair_Display'] text-center mb-10 fade-up">Shop by State</h3>
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+      <div class="category-card">
+        <img src="https://images.unsplash.com/photo-1589902529271-0160938e93f5?auto=format&fit=crop&w=800&q=80" class="rounded-2xl shadow-lg" alt="Rajasthan Handicrafts">
+        <h4 class="text-xl mt-4 text-center font-semibold">Rajasthan</h4>
+      </div>
+      <div class="category-card">
+        <img src="https://images.unsplash.com/photo-1610000000000-48b8f5f8e47d?auto=format&fit=crop&w=800&q=80" class="rounded-2xl shadow-lg" alt="Kerala Handicrafts">
+        <h4 class="text-xl mt-4 text-center font-semibold">Kerala</h4>
+      </div>
+      <div class="category-card">
+        <img src="https://images.unsplash.com/photo-1628191010650-9d37f9c06e3d?auto=format&fit=crop&w=800&q=80" class="rounded-2xl shadow-lg" alt="Odisha Handicrafts">
+        <h4 class="text-xl mt-4 text-center font-semibold">Odisha</h4>
+      </div>
+    </div>
+  </section>
+
+  <!-- 🌾 Featured Products -->
+  <section class="bg-[#efe9e4] py-16 px-6">
+    <h3 class="text-3xl font-['Playfair_Display'] text-center mb-10 fade-up">Featured Handicrafts</h3>
+    <div class="max-w-6xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-10">
+      <div class="product-card fade-up">
+        <img src="https://images.unsplash.com/photo-1608501078713-2d94b55a5c2e?auto=format&fit=crop&w=800&q=80" class="rounded-2xl shadow-lg" alt="Handmade Pottery">
+        <div class="p-4">
+          <h4 class="text-lg font-semibold">Handmade Pottery</h4>
+          <p class="text-sm text-[#6b4f4f] mb-2">Rajasthan</p>
+          <button class="add-cart-btn">Add to Cart</button>
+        </div>
+      </div>
+      <div class="product-card fade-up delay-200">
+        <img src="https://images.unsplash.com/photo-1610173824793-5ab09cc72823?auto=format&fit=crop&w=800&q=80" class="rounded-2xl shadow-lg" alt="Bamboo Lamp">
+        <div class="p-4">
+          <h4 class="text-lg font-semibold">Bamboo Lamp</h4>
+          <p class="text-sm text-[#6b4f4f] mb-2">Assam</p>
+          <button class="add-cart-btn">Add to Cart</button>
+        </div>
+      </div>
+      <div class="product-card fade-up delay-400">
+        <img src="https://images.unsplash.com/photo-1608653442543-65f900d94d5e?auto=format&fit=crop&w=800&q=80" class="rounded-2xl shadow-lg" alt="Wooden Carving">
+        <div class="p-4">
+          <h4 class="text-lg font-semibold">Wooden Carving</h4>
+          <p class="text-sm text-[#6b4f4f] mb-2">Tamil Nadu</p>
+          <button class="add-cart-btn">Add to Cart</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 🌸 Footer -->
+  <footer class="bg-[#d9c7b2] py-10 text-center text-[#4b3832]">
+    <p class="font-['Playfair_Display'] text-lg">© 2025 TALES BY HANDS | Celebrating Indian Heritage</p>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
